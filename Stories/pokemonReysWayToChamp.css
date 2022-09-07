@@ -47,6 +47,8 @@ h2 {
 }
 .fightTable{
     width: 100%;
+    text-align: center;
+    border: black;
 }
 
 .columns3{
