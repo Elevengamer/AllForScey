@@ -1,7 +1,9 @@
 * {
     line-height: 1.5;
 }
-
+a{
+    color: white;
+}
 
 table,
 th,
@@ -15,7 +17,6 @@ table {
     width: 95%;
     text-align: center;
     background: white;
-    box-shadow: 2px 2px 5px #666666;
     margin: 5% auto;
 }
 

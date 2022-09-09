@@ -63,7 +63,7 @@ signInWithEmailAndPassword(auth, email, password)
       last_login: lgdate.toLocaleString() ,
     })
     .then(() => {
-      alert("logged in succesfully")
+      //alert("logged in succesfully")
       document.getElementById('goon').click();
     })
     .catch((error) =>{
@@ -76,9 +76,3 @@ signInWithEmailAndPassword(auth, email, password)
     alert(errorMessage);
   })
 });
-
-
-
-
-
-

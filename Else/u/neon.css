@@ -1,0 +1,80 @@
+:root{
+    --black: #000;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: var(--black);
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.text-container{
+    overflow: hidden;
+    position: relative;
+    filter: contrast(110%) brightness(190%);
+}
+
+.neon{
+    position: relative;
+    color: transparent;
+    background: var(--black);
+    font: 700 220px "Lato", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+
+}
+
+
+.neon::before,
+.neon::after{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    filter: blur(5px);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.neon::after{
+    mix-blend-mode: difference;
+}
+
+.gradient,
+.spotlight{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+.gradient{
+    /*background: linear-gradient(45deg, rgb(255, 0, 191), rgb(0, 255, 64));*/
+    background: linear-gradient(90deg, rgb(77,238,234), rgb(116,238,21), rgb(255,231,0),#FF0000,rgb(240,0,255),rgb(0,30,255));
+    mix-blend-mode: multiply;
+}
+
+.spotlight{
+    background: radial-gradient(circle,#fff,transparent 25%) 0 0/25% 25%,
+                radial-gradient(circle, #fff, #000 25%) 50% 50%/ 12.5% 12.5%;
+    top: -100%;
+    left: -100%;
+    mix-blend-mode: color-dodge;
+    animation: light 5s linear infinite;
+}
+
+@keyframes light {
+    100%{
+        transform: translate3d(50%, 50%, 0);
+    }
+}

@@ -1,3 +1,151 @@
-body{
-    background: linear-gradient(black,#520235, #d6299d, #a1176d, #ce2029, #fc5e07, #F17626,#f9de6d,#fcd410,#c2dd33,#97BE03,#a4c6f6,#022d78,black);
+*{
+    line-height: 1.5;
 }
+
+body{
+    background: black;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    max-width: 100vh;
+}
+h1,
+h2 {
+    background: cyan;
+    color: black;
+    text-align: center;
+    padding: 1%;
+    border-radius: 20px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 1500;
+}
+a{
+    color: white;
+}
+.c{
+    font-weight: bold;
+}
+.c1{
+    background: #520235;
+    text-align: center;
+    color: black;
+}
+.c2{
+    background: #d6299d;
+    text-align: center;
+    color: black;
+}
+.c3{
+    background: #a1176d;
+    text-align: center;
+    color: black;
+}
+.c4{
+    background: #ce2029;
+    text-align: center;
+    color: black;
+}
+.c5{
+    background: #fc5e07;
+    text-align: center;
+    color: black;
+}
+.c6{
+    background: #F17626;
+    text-align: center;
+    color: black;
+}
+.c7{
+    background: #f9de6d;
+    text-align: center;
+    color: black;
+}
+.c8{
+    background: #fcd410;
+    text-align: center;
+    color: black;
+}
+.c9{
+    background: #c2dd33;
+    text-align: center;
+    color: black;
+}
+.c10{
+    background: #97BE03;
+    text-align: center;
+    color: black;
+}
+.c11{
+    background: #a4c6f6;
+    text-align: center;
+    color: black;
+}
+.c12{
+    background: #022d78;
+    text-align: center;
+    color: black;
+}
+
+.hiddenLink{
+    color: black;
+}
+
+
+
+
+
+
+h4{
+    background:linear-gradient(0.25turn,black,#520235, #d6299d, #a1176d, #ce2029, #fc5e07, #F17626,#f9de6d,#fcd410,#c2dd33,#97BE03,#a4c6f6,#022d78,black);
+
+    color: black;
+    text-align: center;
+    padding: 1%;
+    border-radius: 20px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 1500;
+}
+
+@media(min-width:1200px) {
+    .mainContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 50%;
+        background: black;
+        color: white;
+        margin: 0px auto;
+        padding: 1.5% 1%;
+        box-shadow: 2px 2px 5px black;
+        min-height: 100vh;
+    }
+
+    .better {
+        font-size: 16px;
+        background: linear-gradient(black,#520235, #d6299d, #a1176d, #ce2029, #fc5e07, #F17626,#f9de6d,#fcd410,#c2dd33,#97BE03,#a4c6f6,#022d78,black);
+        margin: 0;
+        padding: 0px;
+        color: white;
+        max-width: none;
+    }
+    body{
+        background: cyan;
+        margin: 0;
+        padding: 0px;
+        color: white;
+        max-width: none;
+    }
+
+    .hiddenLink:hover{
+        color: white;
+    }
+}
+
+
+/*
+h1
+p
+a (zurück und aufruf)
+main container
+*/

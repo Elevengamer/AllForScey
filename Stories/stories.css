@@ -6,13 +6,21 @@ a{
     color: white;
 }
 
+.indexLinks{
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    background: cyan;
+    margin: 1px;
+}
+
 body {
     background: black;
     margin: 0;
     padding: 20px;
     color: white;
     max-width: 100vh;
-    font-size: 40px;
 }
 
 h1,
