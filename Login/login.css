@@ -1,6 +1,9 @@
 :root{
-  --clr-neon: hsl(317 100% 54%);
-  --clr-bg: hsl(323 21% 16%);
+  
+  --bright: cyan;
+  --dark: #48007c;
+  --clr-neon: cyan;
+  --clr-bg: #48007c;
 }
 
 
@@ -18,16 +21,16 @@
 }
 
 body {
-  background: black;
+  background: var(--dark);
   margin: 0;
   padding: 20px;
-  color: white;
+  color: var(--bright);
   max-width: 100vh;
 }
 
 h1,h2 {
-    background: cyan;
-    color: black;
+    background: var(--bright);
+    color: var(--dark);
     text-align: center;
     padding: 1%;
     border-radius: 20px;
@@ -48,20 +51,20 @@ h1,h2 {
 }
 .indexLinks {
   font-weight: bold;
-  color: black;
+  color: var(--dark);
   display: flex;
   justify-content: space-around;
-  background: cyan;
+  background: var(--bright);
   margin: 1px;
 }
 
 .indexLinks:hover {
   font-weight: normal;
   font-style: italic;
-  color: black;
+  color: var(--dark);
   display: flex;
   justify-content: space-around;
-  background: white;
+  background: var(--bright);
   margin: 1px;
 }
 .center{
@@ -93,29 +96,29 @@ justify-content: space-around;
           box-sizing: border-box;
   }
   #lb{
-    background: cyan;
+    background: linear-gradient(black, var(--dark),var(--bright),var(--dark),black);
   }
   .mainContainer {
     padding-left: 20px;
     padding-right: 20px;
     width: 50%;
-    background: black;
-    color: white;
+    background: var(--dark);
+    color: var(--bright);
     margin: 0px auto;
     padding: 1.5% 1%;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 0px 0px 4px 4px var(--bright);
     min-height: 100vh;
   }
   .smallLog{
-    color: black;
-    background: cyan;
+    color: var(--dark);
+    background: var(--bright);
     box-shadow: none;
   }
 .loginBody {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: cyan;
+  background-color: var(--bright);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,10 +141,10 @@ justify-content: space-around;
   font-size: 40px;
 }
 body {
-  background: cyan;
+  background: linear-gradient(black, var(--dark),var(--bright),var(--dark),black);;
   margin: 0;
   padding: 0px;
-  color: white;
+  color: var(--bright);
   max-width: none;
 }
 
@@ -163,7 +166,7 @@ svg {
     -webkit-filter: url("#gooey");
             filter: url("#gooey");
     position: relative;
-    background-color: #00FF80;
+    background-color: cyan;
   }
   #gooey-button:focus {
     outline: none;
@@ -176,7 +179,7 @@ svg {
     right: 0;
   }
   #gooey-button .bubbles .bubble {
-    background-color: #00FF80;
+    background-color: cyan;
     border-radius: 100%;
     position: absolute;
     top: 0;
